@@ -9,6 +9,7 @@ Installation
 
 	1. copy content from copy_this folder into your shop root
 	2. activate module psContactForm in shop admin
+	3. adjust contact.tpl file (required fields)
 
 
 Changelog
