@@ -6,14 +6,14 @@ Free module for OXID eshop 4.7, 4.8, 4.9 and 4.10.
 
 
 Installation
-
-	1. copy content from copy_this folder into your shop root
-	2. activate module psContactForm in shop admin
-	3. adjust contact.tpl file (required fields)
+1. ```composer require proudcommerce/pscontactform``` 
+2. activate module psContactForm in shop admin 
+3. adjust contact.tpl file (required fields) 
 
 
 Changelog
 
+	2019-03-27	2.0.0	Module migration (OXID 6.x), Removed [Captcha](https://docs.oxid-esales.com/developer/en/6.0/update/eshop_from_53_to_6/features/contribution_modules.html#captcha)
 	2018-05-15	1.0.0	Module release (OXID 4.7 - 4.10)
 	
 	
