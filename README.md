@@ -2,7 +2,7 @@ psContactForm
 ============
 
 Only email address as requiered field in contact form (GDPR/DSGVO).
-Free module for OXID eshop 4.7, 4.8, 4.9 and 4.10.
+Free module for OXID eshop 4.7, 4.8, 4.9, 4.10, 5.x and 6.x.
 
 
 Installation
