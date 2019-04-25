@@ -4,7 +4,7 @@
   "description": "psContactForm",
   "type": "oxideshop-module",
   "license": [
-    "proprietary"
+    "GNU"
   ],
   "authors": [
     {
