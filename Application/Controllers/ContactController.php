@@ -48,8 +48,8 @@ class ContactController extends ContactController_parent
         $sMessage = $oLang->translateString('MESSAGE_FROM') . " " .
             $oLang->translateString($aParams['oxuser__oxsal']) . " " .
             $aParams['oxuser__oxfname'] . " " .
-            $aParams['oxuser__oxlname'] . "(" . $aParams['oxuser__oxusername'] . ")<br /><br />" .
-            nl2br($request->getRequestParameter('c_message'));
+            $aParams['oxuser__oxlname'] . " (" . $aParams['oxuser__oxusername'] . ")\r\n\r\n" .
+            $request->getRequestParameter('c_message');
 
         /** @var Email $oEmail */
         $oEmail = oxNew(Email::class);
