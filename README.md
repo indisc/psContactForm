@@ -13,7 +13,7 @@ Installation
 
 Changelog
 
-    2019-08-27  2.0.1   Removed br-Tags to match OXID default plain-text mail for contact messages
+    2019-08-27	2.0.1	Removed br-Tags to match OXID default plain-text mail for contact messages
 	2019-03-27	2.0.0	Module migration (OXID 6.x), Removed [Captcha](https://docs.oxid-esales.com/developer/en/6.0/update/eshop_from_53_to_6/features/contribution_modules.html#captcha)
 	2018-05-15	1.0.0	Module release (OXID 4.7 - 4.10)
 	
