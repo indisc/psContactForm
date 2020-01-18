@@ -7,6 +7,7 @@ use OxidEsales\Eshop\Core\Email;
 use OxidEsales\Eshop\Core\MailValidator;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\Eshop\Core\Request;
+use OxidEsales\Eshop\Core\Module\Module;
 
 class ContactController extends ContactController_parent
 {
@@ -33,15 +34,22 @@ class ContactController extends ContactController_parent
 
         $sSubject = $request->getRequestParameter('c_subject');
 
-        // proud commerce START
+        // ProudCommerce START
         // if (!$aParams['oxuser__oxfname'] || !$aParams['oxuser__oxlname'] || !$aParams['oxuser__oxusername'] || !$sSubject) {
         if (!$aParams['oxuser__oxusername']) {
-            // proud sourcing STOP
+            // ProudCommerce STOP
 
             // even if there is no exception, use this as a default display method
             Registry::getUtilsView()->addErrorToDisplay('ERROR_MESSAGE_INPUT_NOTALLFIELDS');
 
             return false;
+        }
+        
+        $oModule = oxNew(Module::class);
+        if ($oModule->load("oecaptcha") === true && $oModule->isActive()) {
+            if (!$this->getCaptcha()->passCaptcha()) {
+                return false;
+            }
         }
 
         $oLang = Registry::getLang();

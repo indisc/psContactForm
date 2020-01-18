@@ -16,9 +16,9 @@ $aModule = array(
         'en' => 'Only email address as requiered field in contact form (GDPR).',
     ],
     'thumbnail' => '',
-    'version' => '2.0.1',
+    'version' => '2.0.2',
     'author' => 'ProudCommerce',
-    'url' => 'http://www.proudcommerce.com',
+    'url' => 'https://www.proudcommerce.com',
     'email' => 'module@proudcommerce.com',
     'controllers' => [
     ],
