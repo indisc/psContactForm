@@ -13,6 +13,7 @@ Installation
 
 Changelog
 
+	2020-01-19	2.0.2	Fixed checking captcha, if oecaptcha is used
     2019-08-27	2.0.1	Removed br-Tags to match OXID default plain-text mail for contact messages
 	2019-03-27	2.0.0	Module migration (OXID 6.x), Removed [Captcha](https://docs.oxid-esales.com/developer/en/6.0/update/eshop_from_53_to_6/features/contribution_modules.html#captcha)
 	2018-05-15	1.0.0	Module release (OXID 4.7 - 4.10)
@@ -36,5 +37,5 @@ License
 
 Copyright
 
-	Proud Sourcing GmbH 2018
-	www.proudcommerce.com / www.proudsourcing.de
+	Proud Sourcing GmbH 2020
+	www.proudcommerce.com
